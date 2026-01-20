@@ -29,11 +29,11 @@
 
     section {
       padding: 50px 20px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
     }
 
-    h1, h2 {
+    h1, h2, h3 {
       color: #1f4e79;
     }
 
@@ -59,16 +59,33 @@
       color: white;
     }
 
-    .services ul {
-      list-style: none;
-      padding: 0;
+    /* SERVIÇOS */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
     }
 
-    .services li {
+    .service-card {
       background: white;
-      margin: 10px 0;
-      padding: 15px;
-      border-left: 5px solid #d4a017;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    .service-card i {
+      font-size: 30px;
+      color: #1f4e79;
+      margin-bottom: 10px;
+    }
+
+    .service-card a {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #1f4e79;
     }
 
     .contact {
@@ -110,38 +127,57 @@
       A <strong>Amerigest – Gestão de Condomínios</strong> presta serviços de administração de condomínios em Lisboa,
       assegurando uma gestão organizada, rigorosa e em cumprimento das obrigações legais aplicáveis.
     </p>
-    <p>
-      A nossa atuação centra-se na organização administrativa e financeira do condomínio,
-      no acompanhamento regular das partes comuns e numa comunicação clara com os condóminos,
-      promovendo uma gestão responsável, transparente e ajustada às necessidades de cada condomínio.
-    </p>
   </div>
 </section>
 
-<section class="services">
-  <h2>Serviços</h2>
-  <ul>
-    <li>Gestão administrativa e legal do condomínio</li>
-    <li>Gestão financeira e controlo de receitas e despesas</li>
-    <li>Preparação e apresentação da prestação de contas</li>
-    <li>Acompanhamento de contratos e fornecedores</li>
-    <li>Acompanhamento da segurança, conservação e manutenção das partes comuns</li>
-    <li>Atendimento a condóminos</li>
-    <li>Organização e acompanhamento de assembleias</li>
-  </ul>
-</section>
-
 <section>
-  <h2>Sobre a Amerigest</h2>
-  <p>
-    A <strong>Amerigest</strong> é uma empresa dedicada à administração de condomínios,
-    com uma abordagem baseada no rigor, na organização e no cumprimento das obrigações legais.
-  </p>
-  <p>
-    Trabalhamos de forma estruturada e próxima, privilegiando o acompanhamento regular do condomínio,
-    a prevenção de problemas e uma comunicação clara e acessível,
-    contribuindo para o bom funcionamento das partes comuns e para a valorização do património.
-  </p>
+  <h2>Serviços</h2>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <i class="fas fa-folder-open"></i>
+      <h3>Gestão Administrativa e Legal</h3>
+      <p>Organização administrativa, cumprimento legal e acompanhamento contínuo do condomínio.</p>
+      <a href="#">Saiba mais →</a>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-chart-line"></i>
+      <h3>Gestão Financeira</h3>
+      <p>Gestão rigorosa das contas com controlo de receitas e despesas.</p>
+      <a href="#">Saiba mais →</a>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-clipboard-check"></i>
+      <h3>Prestação de Contas</h3>
+      <p>Preparação e apresentação clara da prestação de contas anual.</p>
+      <a href="#">Saiba mais →</a>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-handshake"></i>
+      <h3>Contratos e Fornecedores</h3>
+      <p>Acompanhamento de contratos e controlo da qualidade dos serviços.</p>
+      <a href="#">Saiba mais →</a>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-tools"></i>
+      <h3>Manutenção e Conservação</h3>
+      <p>Supervisão das partes comuns e acompanhamento da manutenção preventiva.</p>
+      <a href="#">Saiba mais →</a>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-users"></i>
+      <h3>Atendimento aos Condóminos</h3>
+      <p>Comunicação clara, acompanhamento próximo e resposta eficaz.</p>
+      <a href="#">Saiba mais →</a>
+    </div>
+
+  </div>
 </section>
 
 <section class="contact">
