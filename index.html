@@ -4,128 +4,101 @@
   <meta charset="UTF-8">
   <title>Amerigest – Gestão de Condomínios | Lisboa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Administração rigorosa e transparente de condomínios em Lisboa.">
+  <meta name="description" content="Administração rigorosa e transparente de condomínios na Grande Lisboa. Gestão administrativa, financeira e manutenção.">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f6f8;color:#333}
-    header{text-align:center;padding:20px;background:#fff;border-bottom:4px solid #1f4e79}
-    header img{max-width:220px}
-    section{max-width:1100px;margin:auto;padding:60px 20px}
-    h1,h2,h3{color:#1f4e79}
-
-    .hero{
-      background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('fundo.jpg');
-      background-size:cover;text-align:center;padding:100px 20px;color:#fff
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f6f8;
+      color: #333;
     }
 
-    .services-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-      gap:25px;margin-top:40px
+    header {
+      background: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 4px solid #1f4e79;
     }
 
-    .service-card{
-      background:#fff;padding:25px;border-radius:8px;
-      box-shadow:0 8px 20px rgba(0,0,0,.05)
+    header img {
+      max-width: 220px;
     }
 
-    .service-card i{font-size:30px;color:#1f4e79}
-    .service-card a{display:inline-block;margin-top:10px;font-weight:bold;text-decoration:none;color:#1f4e79}
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
 
-    .contact{text-align:center;background:#fff}
-    .contact a{background:#25d366;color:#fff;padding:15px 25px;border-radius:5px;text-decoration:none;font-size:18px}
+    .hero {
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("fundo.jpg") center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
 
-    footer{text-align:center;background:#1f4e79;color:#fff;padding:20px}
-  </style>
-</head>
+    .hero h1 {
+      font-size: 34px;
+      margin-bottom: 20px;
+      color: white;
+    }
 
-<body>
+    .hero p {
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.7;
+      color: white;
+    }
 
-<header>
-  <img src="logo.png" alt="Amerigest">
-</header>
+    h2 {
+      color: #1f4e79;
+      margin-bottom: 30px;
+    }
 
-<section class="hero">
-  <h1>Administração rigorosa e transparente de condomínios em Lisboa</h1>
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
 
-  <p>
-    A Amerigest presta serviços completos de administração de condomínios na Grande Lisboa,
-    assegurando uma gestão organizada, rigorosa e em conformidade com a legislação em vigor.
-  </p>
+    .service-card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
 
-  <p>
-    A nossa atuação centra-se na organização administrativa e financeira do condomínio,
-    no acompanhamento regular das partes comuns e numa comunicação clara com os condóminos,
-    promovendo uma gestão responsável, transparente e ajustada às necessidades de cada condomínio.
-  </p>
-</section>
+    .service-card i {
+      font-size: 32px;
+      color: #1f4e79;
+      margin-bottom: 15px;
+    }
 
+    .service-card h3 {
+      margin-top: 0;
+      color: #1f4e79;
+    }
 
-<section>
-  <h2>Serviços</h2>
+    .service-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #1f4e79;
+      font-weight: bold;
+      text-decoration: none;
+    }
 
-  <div class="services-grid">
+    .page {
+      background: white;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
 
-    <div class="service-card">
-      <i class="fas fa-folder-open"></i>
-      <h3>Gestão Administrativa e Legal</h3>
-      <p>Organização administrativa e cumprimento legal.</p>
-      <a href="gestao-administrativa.html">Saiba mais →</a>
-    </div>
-
-    <div class="service-card">
-      <i class="fas fa-chart-line"></i>
-      <h3>Gestão Financeira</h3>
-      <p>Controlo rigoroso de receitas e despesas.</p>
-      <a href="gestao-financeira.html">Saiba mais →</a>
-    </div>
-
-    <div class="service-card">
-      <i class="fas fa-clipboard-check"></i>
-      <h3>Prestação de Contas</h3>
-      <p>Prestação de contas clara e transparente.</p>
-      <a href="prestacao-contas.html">Saiba mais →</a>
-    </div>
-
-    <div class="service-card">
-      <i class="fas fa-handshake"></i>
-      <h3>Contratos e Fornecedores</h3>
-      <p>Acompanhamento de contratos e serviços.</p>
-      <a href="contratos-fornecedores.html">Saiba mais →</a>
-    </div>
-
-    <div class="service-card">
-      <i class="fas fa-tools"></i>
-      <h3>Manutenção e Conservação</h3>
-      <p>Supervisão das partes comuns.</p>
-      <a href="manutencao.html">Saiba mais →</a>
-    </div>
-
-    <div class="service-card">
-      <i class="fas fa-users"></i>
-      <h3>Atendimento aos Condóminos</h3>
-      <p>Comunicação clara e acompanhamento próximo.</p>
-      <a href="atendimento.html">Saiba mais →</a>
-    </div>
-
-  </div>
-</section>
-
-<section class="contact">
-  <h2>Contactos</h2>
-  <p>📧 amerigestcond@gmail.com</p>
-  <p>📞 +351 966 621 188</p>
-  <a href="https://wa.me/351966621188" target="_blank">
-    <i class="fab fa-whatsapp"></i> WhatsApp
-  </a>
-</section>
-
-<footer>
-  © 2026 Amerigest – Gestão de Condomínios · Lisboa
-</footer>
-
-</body>
-</html>
-
+    form input,
+    form textarea {
+      widt
