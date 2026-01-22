@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <title>Amerigest – Gestão de Condomínios | Lisboa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Administração rigorosa e transparente de condomínios na Grande Lisboa.">
+  <meta name="description" content="Administração rigorosa e transparente de condomínios na Grande Lisboa. Gestão administrativa, financeira e manutenção.">
 
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
@@ -27,24 +28,54 @@
       max-width: 220px;
     }
 
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #1f4e79;
+      font-weight: bold;
+    }
+
     .hero {
       background:
         linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
         url("fundo.jpg") center/cover no-repeat;
       color: white;
-      padding: 100px 20px;
+      padding: 110px 20px;
       text-align: center;
     }
 
-    h1, h2 {
+    .hero h1 {
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.7;
+      font-size: 18px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 70px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
       color: #1f4e79;
+      margin-bottom: 30px;
+      text-align: center;
     }
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 25px;
-      margin-top: 40px;
     }
 
     .service-card {
@@ -52,30 +83,93 @@
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      text-align: center;
     }
 
     .service-card i {
-      font-size: 32px;
+      font-size: 34px;
       color: #1f4e79;
       margin-bottom: 15px;
     }
 
+    .service-card h3 {
+      margin-top: 0;
+      color: #1f4e79;
+    }
+
+    .service-card p {
+      line-height: 1.6;
+    }
+
+    .service-card a {
+      display: inline-block;
+      margin-top: 12px;
+      color: #1f4e79;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .about {
+      background: white;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+
+    .form-section {
+      background: #1f4e79;
+      color: white;
+      padding: 60px 20px;
+    }
+
+    .form-section h2 {
+      color: white;
+    }
+
+    form {
+      max-width: 800px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
     form input,
     form textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
+      padding: 14px;
       border-radius: 6px;
+      border: none;
+      font-size: 15px;
+    }
+
+    form textarea {
+      grid-column: 1 / -1;
+      min-height: 120px;
     }
 
     form button {
-      background: #1f4e79;
-      color: white;
-      padding: 12px 20px;
+      grid-column: 1 / -1;
+      padding: 15px;
+      background: #ffffff;
+      color: #1f4e79;
+      font-size: 16px;
+      font-weight: bold;
       border: none;
       border-radius: 6px;
       cursor: pointer;
+    }
+
+    footer {
+      background: #0f2f4a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+
+    footer p {
+      margin: 5px 0;
     }
   </style>
 </head>
@@ -83,36 +177,93 @@
 <body>
 
 <header>
-  <h1>Amerigest</h1>
-  <p>Gestão de Condomínios</p>
+  <img src="logo.png" alt="Amerigest">
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#sobre">Quem Somos</a>
+    <a href="#proposta">Solicite uma Proposta</a>
+  </nav>
 </header>
 
 <section class="hero">
-  <h1>Gestão Profissional de Condomínios</h1>
-  <p>Administração rigorosa, transparente e próxima dos condóminos.</p>
+  <h1>Administração rigorosa e transparente de condomínios em Lisboa</h1>
+  <p>
+    A Amerigest presta serviços completos de administração de condomínios na Grande Lisboa,
+    assegurando uma gestão organizada, rigorosa e em conformidade com a legislação em vigor.
+  </p>
 </section>
 
-<section>
-  <h2>Serviços</h2>
+<section id="servicos">
+  <h2>Os nossos serviços</h2>
 
   <div class="services-grid">
     <div class="service-card">
-      <i class="fa-solid fa-building"></i>
-      <h3>Gestão Administrativa</h3>
+      <i class="fas fa-folder-open"></i>
+      <h3>Gestão Administrativa e Legal</h3>
+      <p>Organização administrativa do condomínio e cumprimento rigoroso da legislação.</p>
+      <a href="gestao-administrativa.html">Saiba mais</a>
     </div>
 
     <div class="service-card">
-      <i class="fa-solid fa-euro-sign"></i>
+      <i class="fas fa-chart-line"></i>
       <h3>Gestão Financeira</h3>
+      <p>Controlo rigoroso de receitas, despesas e orçamentos do condomínio.</p>
+      <a href="gestao-financeira.html">Saiba mais</a>
     </div>
 
     <div class="service-card">
-      <i class="fa-solid fa-screwdriver-wrench"></i>
+      <i class="fas fa-clipboard-check"></i>
+      <h3>Prestação de Contas</h3>
+      <p>Prestação de contas clara, detalhada e transparente aos condóminos.</p>
+      <a href="prestacao-contas.html">Saiba mais</a>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-tools"></i>
       <h3>Manutenção</h3>
+      <p>Acompanhamento regular das partes comuns e coordenação de intervenções.</p>
+      <a href="manutencao.html">Saiba mais</a>
     </div>
   </div>
 </section>
 
+<section id="sobre">
+  <h2>Quem somos</h2>
+  <div class="about">
+    <p>
+      A Amerigest é uma empresa especializada na administração de condomínios,
+      com foco na transparência, proximidade e responsabilidade.
+    </p>
+    <p>
+      A nossa atuação centra-se na organização administrativa e financeira,
+      no acompanhamento regular das partes comuns e numa comunicação clara com os condóminos,
+      promovendo uma gestão responsável e ajustada às necessidades de cada condomínio.
+    </p>
+  </div>
+</section>
+
+<section id="proposta" class="form-section">
+  <h2>Solicite uma proposta</h2>
+
+  <form>
+    <input type="text" placeholder="Nome *" required>
+    <input type="email" placeholder="Email *" required>
+    <input type="tel" placeholder="Telefone *" required>
+    <input type="text" placeholder="Morada">
+    <input type="text" placeholder="Localidade">
+    <input type="number" placeholder="Nº de Pisos">
+    <input type="number" placeholder="Nº de Frações">
+    <textarea placeholder="Mensagem"></textarea>
+    <button type="submit">Enviar pedido</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Amerigest – Gestão de Condomínios</p>
+  <p>Grande Lisboa</p>
+</footer>
+
 </body>
 </html>
+
 
