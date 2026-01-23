@@ -106,14 +106,6 @@
       text-decoration: none;
     }
 
-    .about {
-      background: white;
-      padding: 50px;
-      border-radius: 10px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-      line-height: 1.8;
-    }
-
     /* FORMULÁRIO */
     .contact-form {
       background: white;
@@ -157,6 +149,14 @@
       margin-top: 10px;
     }
 
+    .about {
+      background: white;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+
     footer {
       background: #1f4e79;
       color: white;
@@ -164,6 +164,11 @@
       padding: 25px;
       font-size: 14px;
       margin-top: 60px;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -174,6 +179,7 @@
   <img src="logo.png" alt="Amerigest – Gestão de Condomínios">
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <h1>Administração rigorosa e transparente de condomínios na Grande Lisboa</h1>
   <p>
@@ -181,56 +187,99 @@
     assegurando uma gestão organizada, rigorosa e em conformidade com a legislação em vigor.
     <br><br>
     A nossa atuação centra-se na organização administrativa e financeira do condomínio,
-    no acompanhamento regular das partes comuns e numa comunicação clara com os condóminos,
-    promovendo uma gestão responsável, transparente e ajustada às necessidades de cada condomínio.
+    no acompanhamento regular das partes comuns e numa comunicação clara com os condóminos.
   </p>
 </section>
 
+<!-- SERVIÇOS -->
+<section>
+  <h2>Serviços de Administração de Condomínios</h2>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <i class="fas fa-folder-open"></i>
+      <h3>Gestão Administrativa</h3>
+      <p>Organização administrativa, assembleias e cumprimento das obrigações legais.</p>
+      <a href="gestao-administrativa.html">Saiba mais</a>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-chart-line"></i>
+      <h3>Gestão Financeira</h3>
+      <p>Gestão rigorosa das contas, quotas, pagamentos e orçamentos.</p>
+      <a href="gestao-financeira.html">Saiba mais</a>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-scale-balanced"></i>
+      <h3>Cobranças e Apoio Jurídico</h3>
+      <p>Acompanhamento de situações de incumprimento e apoio jurídico.</p>
+      <a href="cobrancas-juridico.html">Saiba mais</a>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-tools"></i>
+      <h3>Manutenção e Conservação</h3>
+      <p>Conservação e valorização das partes comuns do edifício.</p>
+      <a href="manutencao.html">Saiba mais</a>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-users"></i>
+      <h3>Atendimento aos Condóminos</h3>
+      <p>Comunicação clara, proximidade e acompanhamento contínuo.</p>
+      <a href="atendimento.html">Saiba mais</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FORMULÁRIO -->
 <section>
   <h2>Solicite uma proposta sem compromisso</h2>
   <p class="section-intro">
-    Preencha o formulário abaixo e entraremos em contacto consigo para apresentar
-    uma solução de administração ajustada às necessidades do seu condomínio.
+    Preencha o formulário e entraremos em contacto para apresentar
+    uma solução ajustada às necessidades do seu condomínio.
   </p>
 
   <form class="contact-form">
-
     <input type="text" name="nome" placeholder="Nome de contacto *" required>
     <input type="email" name="email" placeholder="Email *" required>
     <input type="tel" name="telefone" placeholder="Telefone *" required>
-
     <input type="text" name="localidade" placeholder="Localidade do condomínio">
     <input type="text" name="morada_condominio" placeholder="Morada do condomínio (opcional)">
-    <input type="number" name="fracoes" placeholder="Número de frações (ex.: 12, 24, 60)">
-
-    <textarea name="mensagem" placeholder="Indique se já tem administrador, as principais necessidades do condomínio ou qualquer informação relevante."></textarea>
+    <input type="number" name="fracoes" placeholder="Número de frações">
+    <textarea name="mensagem" placeholder="Indique as principais necessidades do condomínio."></textarea>
 
     <button type="button">Solicitar proposta</button>
 
     <p class="form-note">
-      Os dados recolhidos destinam-se exclusivamente à análise do seu pedido de proposta.
+      Os dados pessoais recolhidos destinam-se exclusivamente ao tratamento do seu pedido.
+      Consulte a nossa <a href="privacidade.html">Política de Privacidade</a>.
     </p>
-
   </form>
 </section>
 
+<!-- SOBRE -->
 <section>
   <h2>Sobre a Amerigest</h2>
   <div class="about">
     <p>
       A Amerigest dedica-se à administração de condomínios na Grande Lisboa,
-      com uma atuação baseada no rigor, na organização e no cumprimento das obrigações legais.
+      com uma atuação baseada no rigor, na organização e na transparência.
     </p>
     <p>
-      Trabalhamos de forma estruturada e próxima, privilegiando o acompanhamento regular do condomínio,
-      a prevenção de problemas e uma comunicação clara e acessível,
-      contribuindo para o bom funcionamento das partes comuns e para a valorização do património.
+      Privilegiamos uma gestão próxima, responsável e ajustada à realidade de cada condomínio,
+      contribuindo para o bom funcionamento das partes comuns e a valorização do património.
     </p>
   </div>
 </section>
 
+<!-- RODAPÉ -->
 <footer>
-  © 2026 Amerigest – Gestão de Condomínios · Grande Lisboa
+  © 2026 Amerigest – Gestão de Condomínios · Grande Lisboa<br>
+  <a href="privacidade.html">Política de Privacidade</a>
 </footer>
 
 </body>
