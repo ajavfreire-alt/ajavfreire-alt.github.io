@@ -106,7 +106,7 @@
       line-height: 1.8;
     }
 
-    /* FORMULÁRIO */
+    /* FORMULÁRIO (SEM LIGAÇÃO) */
     .contact-form {
       background: white;
       padding: 50px;
@@ -140,10 +140,6 @@
       font-size: 16px;
       border-radius: 5px;
       cursor: pointer;
-    }
-
-    .contact-form button:hover {
-      background: #163b5c;
     }
 
     footer {
@@ -221,9 +217,8 @@
 <section>
   <h2>Solicite uma Proposta</h2>
 
-  <form class="contact-form"
-        action="https://formspree.io/f/mbdgopaa"
-        method="POST">
+  <!-- FORMULÁRIO SEM ACTION (INATIVO) -->
+  <form class="contact-form">
 
     <input type="text" name="nome" placeholder="Nome *" required>
     <input type="email" name="email" placeholder="Email *" required>
@@ -233,10 +228,7 @@
 
     <textarea name="mensagem" placeholder="Mensagem"></textarea>
 
-    <!-- anti-spam -->
-    <input type="text" name="_gotcha" style="display:none">
-
-    <button type="submit">Enviar pedido</button>
+    <button type="button">Enviar pedido</button>
   </form>
 </section>
 
