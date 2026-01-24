@@ -106,7 +106,6 @@
       text-decoration: none;
     }
 
-    /* FORMULÁRIO */
     .contact-form {
       background: white;
       padding: 50px;
@@ -179,7 +178,6 @@
   <img src="logo.png" alt="Amerigest – Gestão de Condomínios">
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <h1>Administração rigorosa e transparente de condomínios na Grande Lisboa</h1>
   <p>
@@ -191,12 +189,10 @@
   </p>
 </section>
 
-<!-- SERVIÇOS -->
 <section>
   <h2>Serviços de Administração de Condomínios</h2>
 
   <div class="services-grid">
-
     <div class="service-card">
       <i class="fas fa-folder-open"></i>
       <h3>Gestão Administrativa</h3>
@@ -231,11 +227,9 @@
       <p>Comunicação clara, proximidade e acompanhamento contínuo.</p>
       <a href="atendimento.html">Saiba mais</a>
     </div>
-
   </div>
 </section>
 
-<!-- FORMULÁRIO -->
 <section>
   <h2>Solicite uma proposta sem compromisso</h2>
   <p class="section-intro">
@@ -244,15 +238,19 @@
   </p>
 
   <form class="contact-form" action="https://formspree.io/f/mbdgopaa" method="POST">
+
+    <input type="hidden" name="_subject" value="Pedido de proposta – Amerigest">
+
     <input type="text" name="nome" placeholder="Nome de contacto *" required>
     <input type="email" name="email" placeholder="Email *" required>
     <input type="tel" name="telefone" placeholder="Telefone *" required>
     <input type="text" name="localidade" placeholder="Localidade do condomínio">
     <input type="text" name="morada_condominio" placeholder="Morada do condomínio (opcional)">
     <input type="number" name="fracoes" placeholder="Número de frações">
+
     <textarea name="mensagem" placeholder="Indique as principais necessidades do condomínio."></textarea>
 
-    <button type="button">Solicitar proposta</button>
+    <button type="submit">Solicitar proposta</button>
 
     <p class="form-note">
       Os dados pessoais recolhidos destinam-se exclusivamente ao tratamento do seu pedido.
@@ -261,7 +259,6 @@
   </form>
 </section>
 
-<!-- SOBRE -->
 <section>
   <h2>Sobre a Amerigest</h2>
   <div class="about">
@@ -276,7 +273,6 @@
   </div>
 </section>
 
-<!-- RODAPÉ -->
 <footer>
   © 2026 Amerigest – Gestão de Condomínios · Grande Lisboa<br>
   <a href="privacidade.html">Política de Privacidade</a>
