@@ -176,6 +176,60 @@
       opacity: 0.9;
       margin-bottom: 10px;
     }
+
+    /* SELO APEGAC */
+
+    .apegac-section {
+      margin: 25px auto;
+      text-align: center;
+    }
+
+    .apegac-seal {
+      width: 110px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 12px;
+    }
+
+    .apegac-title {
+      font-weight: bold;
+      margin: 5px 0;
+      font-size: 15px;
+    }
+
+    .apegac-description {
+      font-size: 12px;
+      line-height: 1.5;
+      margin: 5px auto;
+      max-width: 450px;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 70px 20px;
+      }
+
+      .hero h1 {
+        font-size: 26px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .contact-form {
+        padding: 25px;
+      }
+
+      .about {
+        padding: 30px;
+      }
+
+      .apegac-seal {
+        width: 100px;
+      }
+    }
   </style>
 </head>
 
@@ -187,6 +241,7 @@
 
 <section class="hero">
   <h1>Administração rigorosa e transparente de condomínios na Grande Lisboa</h1>
+
   <p>
     A Amerigest presta serviços completos de administração de condomínios na Grande Lisboa,
     assegurando uma gestão organizada, rigorosa e em conformidade com a legislação em vigor.
@@ -200,6 +255,7 @@
   <h2>Serviços de Administração de Condomínios</h2>
 
   <div class="services-grid">
+
     <div class="service-card">
       <i class="fas fa-folder-open"></i>
       <h3>Gestão Administrativa</h3>
@@ -234,6 +290,7 @@
       <p>Comunicação clara, proximidade e acompanhamento contínuo.</p>
       <a href="atendimento.html">Saiba mais</a>
     </div>
+
   </div>
 </section>
 
@@ -250,10 +307,15 @@
     <input type="hidden" name="_subject" value="Pedido de proposta – Amerigest">
 
     <input type="text" name="nome" placeholder="Nome de contacto *" required>
+
     <input type="email" name="email" placeholder="Email *" required>
+
     <input type="tel" name="telefone" placeholder="Telefone *" required>
+
     <input type="text" name="localidade" placeholder="Localidade do condomínio">
+
     <input type="text" name="morada_condominio" placeholder="Morada do condomínio (opcional)">
+
     <input type="number" name="fracoes" placeholder="Número de frações">
 
     <textarea name="mensagem" placeholder="Indique as principais necessidades do condomínio."></textarea>
@@ -272,6 +334,7 @@
   <h2>Informação de contacto</h2>
 
   <div class="about">
+
     <p>
       📧 <a href="mailto:geral@amerigest.pt">geral@amerigest.pt</a>
     </p>
@@ -279,15 +342,38 @@
     <p>
       📞 <a href="tel:+351966621188">966 621 188</a>
     </p>
+
   </div>
 </section>
 
 <footer>
+
   <p class="legal-info">
     © 2026 Amerigest – Planícies Enigmáticas – Unipessoal, Lda. • NIF 519261445
   </p>
 
+  <!-- SELO APEGAC -->
+
+  <div class="apegac-section">
+
+    <img
+      src="sealpage-1.png"
+      alt="Amerigest - Associada APEGAC - Garantia de Qualidade"
+      class="apegac-seal"
+    >
+
+    <p class="apegac-title">
+      Empresa Associada APEGAC
+    </p>
+
+    <p class="apegac-description">
+      Associação Portuguesa das Empresas de Gestão e Administração de Condomínios
+    </p>
+
+  </div>
+
   <a href="privacidade.html">Política de Privacidade</a>
+
 </footer>
 
 </body>
